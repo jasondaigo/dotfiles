@@ -5,7 +5,7 @@
 UUID=42dc9bc6-b0b4-472a-8ae8-1a4f844b89d3	/         	ext4      	rw,relatime													0 1
 UUID=2EF8-19EF      				/boot     	vfat   		rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
 UUID=68413423-15ed-4b80-8c16-313d2b2d3964 	/mnt/games	ext4 		rw 														0 2
-#ubuntu_server:/mnt/stuff			/mnt/cloud	nfs		defaults,soft,rsize=32768,wsize=32768,timeo=900,noauto,users,retrans=5,_netdev						0 0
+#ubuntu_server:/mnt/stuff			/mnt/cloud	nfs		defaults,soft,rsize=32768,wsize=32768,timeo=900,noauto,users,retrans=5,_netdev					0 0
 
 
 192.168.1.3:/mnt/stuff			/mnt/cloud	nfs		defaults,soft,rsize=32768,wsize=32768,timeo=900,noauto,users,retrans=5,_netdev						0 0
