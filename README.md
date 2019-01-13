@@ -1,7 +1,7 @@
 # Desktop Pc
-Motherboard: Asus ROG STRIX B450-F GAMING
-CPU: AMD Ryzen 2600X
-Graphics: SAPPHIRE PULSE Radeon RX Vega 56
+Motherboard: Asus ROG STRIX B450-F GAMING   
+CPU: AMD Ryzen 2600X   
+Graphics: SAPPHIRE PULSE Radeon RX Vega 56    
 Memory: ADATA XPG Gammix D10 2x8GB, DDR4-3000
 Case: Fractal Design Meshify C
 Display: LG IPS235
