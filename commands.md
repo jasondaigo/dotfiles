@@ -1,60 +1,66 @@
 unrar all archives in current folder  
-$ `for f in *.rar;do unrar e -o+ $f;done`  
+`for f in *.rar;do unrar e -o+ $f;done`  
 
 show folder size  
-`$ du -h --max-depth=1`  
+`du -h --max-depth=1`  
 
 convert movie to xbox360 format  
-`$ ffmpeg -i "file.mkv" -vcodec libx264 -acodec ac3 -ab 160k "file.mp4"`  
+`ffmpeg -i "file.mkv" -vcodec libx264 -acodec ac3 -ab 160k "file.mp4"`  
 
 batch convert above  
-```$ for i in *.mkv;   do name=`echo $i | cut -d'.' -f1`;   echo $name;   ffmpeg -i "$i" "${name}.mp4" -vcodec libx264 -acodec ac3 -ab 160k; done ```
+```for i in *.mkv;   do name=`echo $i | cut -d'.' -f1`;   echo $name;   ffmpeg -i "$i" "${name}.mp4" -vcodec libx264 -acodec ac3 -ab 160k; done ```
 
 monero daemon  
-`$ monerod --data-dir /mnt/cloud/monero`  
+`monerod --data-dir /mnt/cloud/monero`  
 
 import gpg key for aur packages  
-`$ gpg --receive-key keyid`  
+`gpg --receive-key keyid`  
 
 ethereum blockchain sync  
-`$ geth --syncmode "fast"`  
+`geth --syncmode "fast"`  
 
 show external ip  
-`$ curl ifconfig.me`  
+`curl ifconfig.me`  
 
 weather forecast  
-`$ curl wttr.in/Wilhelmshaven`  
+`curl wttr.in/Wilhelmshaven`  
 
 set gtk cursor global value for browsers   
-`$ gsettings set org.gnome.desktop.interface cursor-theme Adwaita`  
+`gsettings set org.gnome.desktop.interface cursor-theme Adwaita`  
 
 calculator  
-` $ bc`  
+`bc`  
 
 backup through ssh  
-`$ rsync -avz /source/folder/ user@remoteadress:/remote_folder`  
+`rsync -avz /source/folder/ user@remoteadress:/remote_folder`  
 
 unrar all archives in folder (autoverwrite enabled)  
-`$ find . -name "*.rar" -exec unrar x -o+ {} \;`  
+`find . -name "*.rar" -exec unrar x -o+ {} \;`  
 
 show cpu frequency 
-`$ cat /proc/cpuinfo | grep "MHz" & watch -n1 "cat /proc/cpuinfo | grep \"^[c]pu MHz\""`  
+`cat /proc/cpuinfo | grep "MHz" & watch -n1 "cat /proc/cpuinfo | grep \"^[c]pu MHz\""`  
 
 force cpu governor  
-`$ sudo cpupower frequency-set -g powersave or performance`  
+`sudo cpupower frequency-set -g powersave or performance`  
 
-list available governors $ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors  
+list available governors    
+`cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors`  
 
-show network usage $ iftop  
+show network usage  
+` iftop`  
 
-create playlist $ ls -1 *.mp4 > playlist.m3u  
+create playlist  
+`ls -1 *.mp4 > playlist.m3u`  
 
+cut characters playlist example  
+`cut -c 50- playlist.m3u > newplaylist.m3u` 
 
-cut characters playlist example $ cut -c 50- playlist.m3u > newplaylist.m3u  
+batch rename delete example  
+```for file in *text* ; do mv "$file" "`echo $file | sed 's/\text//'`" ; done ```
 
-batch rename delete example $ for file in *text* ; do mv "$file" "`echo $file | sed 's/\text//'`" ; done  
-
-output orphaned packages to file & run removal  $ sudo pacman -Qqdt > pkglist.txt & sudo pacman -R - < pkglist.txt  
+output orphaned packages to file & run removal  
+`sudo pacman -Qqdt > pkglist.txt`  
+`sudo pacman -R - < pkglist.txt`  
 
 hack wpa $ airmon-ng start wlp2s0f0u4 & airodump wlp2s0f0u4mon  
 
