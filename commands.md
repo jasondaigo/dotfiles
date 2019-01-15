@@ -89,5 +89,5 @@ disable vsync environment variable
 current vega voltage values  
 `sudo cat /sys/class/drm/card0/device/pp_od_clk_voltage`  
 
-force high dpm on graphics card 
+force high dpm on graphics card  
 `echo high > /sys/class/drm/card0/device/power_dpm_force_performance_level`  
