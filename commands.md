@@ -1,14 +1,30 @@
 unrar all archives in current folder
-```$ for f in *.rar;do unrar e -o+ $f;done```  
+`$ for f in *.rar;do unrar e -o+ $f;done`  
+
 show folder size 
-```$ du -h --max-depth=1```  
-convert movie to xbox360 format $ ffmpeg -i "file.mkv" -vcodec libx264 -acodec ac3 -ab 160k "file.mp4"  
-batch convert above $ for i in *.mkv;   do name=`echo $i | cut -d'.' -f1`;   echo $name;   ffmpeg -i "$i" "${name}.mp4" -vcodec libx264 -acodec ac3 -ab 160k; done  
-monero daemon $ monerod --data-dir /mnt/cloud/monero  
-import gpg key for aur packages $ gpg --receive-key keyid  
-ethereum blockchain sync $ geth --syncmode "fast"  
-show external ip $ curl ifconfig.me  
-weather forecast $ curl wttr.in/Wilhelmshaven  
+`$ du -h --max-depth=1`  
+
+convert movie to xbox360 format  
+`$ ffmpeg -i "file.mkv" -vcodec libx264 -acodec ac3 -ab 160k "file.mp4"`  
+
+batch convert above  
+```$ for i in *.mkv;   do name=`echo $i | cut -d'.' -f1`;   echo $name;   ffmpeg -i "$i" "${name}.mp4" -vcodec libx264 -acodec ac3 -ab 160k; done ```
+
+monero daemon  
+`$ monerod --data-dir /mnt/cloud/monero`  
+
+import gpg key for aur packages  
+`$ gpg --receive-key keyid`  
+
+ethereum blockchain sync 
+`$ geth --syncmode "fast"`  
+
+show external ip  
+`$ curl ifconfig.me`  
+
+weather forecast  
+`$ curl wttr.in/Wilhelmshaven`  
+
 set gtk cursor global value for browsers $ gsettings set org.gnome.desktop.interface cursor-theme Adwaita  
 calculator $ bc  
 backup through ssh $ rsync -avz /source/folder/ user@remoteadress:/remote_folder  
