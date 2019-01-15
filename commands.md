@@ -1,4 +1,5 @@
-unrar all archives in current folder $ for f in *.rar;do unrar e -o+ $f;done  
+unrar all archives in current folder
+```$ for f in *.rar;do unrar e -o+ $f;done```
 show folder size $ du -h --max-depth=1  
 convert movie to xbox360 format $ ffmpeg -i "file.mkv" -vcodec libx264 -acodec ac3 -ab 160k "file.mp4"  
 batch convert above $ for i in *.mkv;   do name=`echo $i | cut -d'.' -f1`;   echo $name;   ffmpeg -i "$i" "${name}.mp4" -vcodec libx264 -acodec ac3 -ab 160k; done  
