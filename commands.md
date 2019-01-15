@@ -1,5 +1,5 @@
 unrar all archives in current folder  
-`$ for f in *.rar;do unrar e -o+ $f;done`  
+$ `for f in *.rar;do unrar e -o+ $f;done`  
 
 show folder size  
 `$ du -h --max-depth=1`  
