@@ -1,3 +1,4 @@
+#############################################
 Motherboard: Asus ROG STRIX B450-F GAMING  
 CPU: AMD Ryzen 2600X  
 Graphics: SAPPHIRE PULSE Radeon RX Vega 56  
@@ -13,3 +14,4 @@ Mic: Audo-Technica AT2020Usb+
 Headset: Steelseries Wireles H  
 Mousepad: Roccat Hiro 3D Supremacy Surface  
 Desktop: KDE Plasma 5.14  
+#############################################
