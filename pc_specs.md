@@ -12,6 +12,6 @@ Keyboard: Ducky One TKL
 Mouse: Roccat Kone Pure  
 Mic: Audo-Technica AT2020Usb+  
 Headset: Steelseries Wireles H  
-Mousepad: Roccat Hiro 3D Supremacy Surface  
-Desktop: KDE Plasma 5.14  
+Mousepad: Titanwolf Epsilon  
+Desktop: i3-gaps 4.16.1
 #############################################
