@@ -1,8 +1,9 @@
-unrar all archives in current folder 
+unrar all archives in current folder   
 $ for f in *.rar;do unrar e -o+ $f;done   
-show folder size 
+show folder size    
 $ du -h --max-depth=1   
-list folder by size $ ls -lSha /home/jason  
+list folder by size    
+$ ls -lSha /home/jason  
 copy with progress bar and transferspeed display $ rsync -ah --progress source-file destination-file  
 convert movie to xbox360 format $ ffmpeg -i "file.mkv" -vcodec libx264 -acodec ac3 -ab 160k "file.mp4"  
 batch convert above $ for i in *.mkv;   do name=`echo $i | cut -d'.' -f1`;   echo $name;   ffmpeg -i "$i" "${name}.mp4" -vcodec libx264 -acodec ac3 -ab 160k; done  
