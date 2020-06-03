@@ -1,5 +1,5 @@
-unrar all archives in current folder $ for f in *.rar;do unrar e -o+ $f;done
-show folder size $ du -h --max-depth=1
+unrar all archives in current folder $ for f in *.rar;do unrar e -o+ $f;done   
+show folder size $ du -h --max-depth=1   
 list folder by size $ ls -lSha /home/jason
 copy with progress bar and transferspeed display $ rsync -ah --progress source-file destination-file
 convert movie to xbox360 format $ ffmpeg -i "file.mkv" -vcodec libx264 -acodec ac3 -ab 160k "file.mp4"
