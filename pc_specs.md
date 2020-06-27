@@ -13,5 +13,5 @@ Mouse: Roccat Kone Pure
 Mic: Audo-Technica AT2020Usb+  
 Headset: Steelseries Wireles H  
 Mousepad: Titanwolf Epsilon  
-Desktop: i3-gaps 4.16.1
+Desktop: i3-gaps on Arch    
 #############################################
