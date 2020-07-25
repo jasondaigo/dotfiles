@@ -1,0 +1,24 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mapper/chronicle--vg-root /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/sdc2 during installation
+UUID=4adc9e67-163d-4442-88a9-edc671e95029 /boot           ext2    defaults        0       2
+# /boot/efi was on /dev/sdc1 during installation
+UUID=92B6-59F7  /boot/efi       vfat    umask=0077      0       1
+/dev/mapper/chronicle--vg-swap_1 none            swap    sw              0       0
+
+# SnapRAID Disks
+UUID=5327d1b4-f466-4bf9-9756-3b0dba5d9901	/mnt/disk1	ext4	defaults	0 2
+UUID=d61ba7f8-f62b-443a-aade-b2700eb7a041	/mnt/disk2	ext4	defaults	0 2
+
+# Parity Disks
+UUID=508690f5-371b-453b-8eb9-9bccbaa7f573	/mnt/parity	ext4	defaults	0 2
+
+#MergerFS
+/mnt/disk*    /mnt/mergerfs       fuse.mergerfs  defaults,allow_other,use_ino,fsname=mergerFS   0       0
+ 
