@@ -1,0 +1,4 @@
+sdc3_crypt UUID=5c8224a9-c346-4b79-abcd-819681e6d0cd none luks,discard
+disk1 UUID=9aece325-443d-43c0-8849-26406e9f141e /root/keyfile luks
+disk2 UUID=a94bccb8-667f-4a8d-96ac-303650649c76 /root/keyfile luks
+parity UUID=c6e234af-9dec-40c4-b03b-100d85b08379 /root/keyfile luks
